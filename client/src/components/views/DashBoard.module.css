@@ -1,0 +1,131 @@
+.btnAddIcon{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.yourInfo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+}
+.colorCard
+{
+  color:blue !important;
+}
+.yourInfoHeader
+{
+  margin: 10px 0  ;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.yourInfoHeaderImage
+{
+  object-fit: cover;
+  border-radius: 100%;
+}
+.yourInfoHeaderChoose
+{
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  color:blue;
+  display: flex;
+  cursor: pointer;
+}
+.iconCheckingUser
+{
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  color: green;
+}
+.iconCheckingUser:hover
+{
+  opacity: 0.6;
+}
+.formCenter
+{
+  display: flex !important;
+  justify-content: center;
+}
+.formChangePass
+{
+  width: 350px;
+}
+/* 404 page */
+.header_404
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#fff;
+  height: 100vh;
+  overflow: hidden;
+}
+.body_404
+{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.err
+{
+  color: red;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 150px;
+  
+}
+.err2
+{
+  margin:0px 16px;
+  animation: rotate 3s linear infinite;
+}
+.errImage
+{
+  width: 140px;
+  height: 140px;
+}
+.footer_404
+{
+  width: 400px;
+  text-align: center;
+  font-size: 30px;
+  color:#fff;
+}
+.footer_span
+{
+  margin: 0 6px;
+  text-decoration: none;
+}
+@media (max-width:760px)
+{
+  .footer_404
+  {
+    width: 300px;
+  }
+}
+.footer_p
+{
+  margin-top: 10px;
+}
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}

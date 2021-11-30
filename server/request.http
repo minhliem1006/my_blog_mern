@@ -1,0 +1,46 @@
+
+POST http://localhost:5000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+        "username": "minhliem111",
+        "password": "123123"
+}
+###
+POST http://localhost:5000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+        "username":"123",
+        "password":"123123123hominhliem113"
+}
+###
+POST http://localhost:5000/api/posts HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTcxMDg0MTRjY2ZjMjA1MTcyZDBhOTgiLCJpYXQiOjE2MzY0MzM5ODd9.QPLWaFH0BRsdHuh53TGHBya3ntTH2bvXcpQOQCEAIII 
+// uy quyen token
+
+{
+        "title":"REACT To learn",
+        "description": "abc",
+        "url": "google.com",
+        "status": "To learn"
+}
+### 
+GET http://localhost:5000/api/posts HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTcxMDg0MTRjY2ZjMjA1MTcyZDBhOTgiLCJpYXQiOjE2MzQ3OTc2MzR9.QR1qAna4Yxtq5mcOdQXN4iyhChPDW7LzBqB5VB24dBo
+
+###
+PUT http://localhost:5000/api/posts/6171085c4ccfc205172d0a9a HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTcxMDg0MTRjY2ZjMjA1MTcyZDBhOTgiLCJpYXQiOjE2MzQ3OTc2MzR9.QR1qAna4Yxtq5mcOdQXN4iyhChPDW7LzBqB5VB24dBo
+
+{
+        "title":"my update blog",
+        "description": "update",
+        "url": "google.com",
+        "status": "learning"    
+}
+###
+DELETE  http://localhost:5000/api/posts/6171085c4ccfc205172d0a9a HTTP/1.1
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTcxMDg0MTRjY2ZjMjA1MTcyZDBhOTgiLCJpYXQiOjE2MzQ3OTc2MzR9.QR1qAna4Yxtq5mcOdQXN4iyhChPDW7LzBqB5VB24dBo
