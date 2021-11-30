@@ -61,7 +61,7 @@ const Blog = ({index,children}) => {
         } catch (error) {
             console.log('code sai');
         }
-       
+        setShow(false);
     }
     //handle restore post trash
     const handleRestore =async(idPost)=>
@@ -76,6 +76,7 @@ const Blog = ({index,children}) => {
         } catch (error) {
             
         }
+
     }
     //handle show date in moongo of post
     const date = new Date(children.createdAt);
