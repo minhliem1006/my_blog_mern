@@ -68,11 +68,10 @@ const Post = () => {
             }
             else
             {
-                showImage=<div>
-                                <div style={{backgroundImage:`url(${urlApi}/uploads/${post.image})`}} className="show__details-post--image">
-                                </div>
+                showImage= <div style={{backgroundImage:`url(${urlApi}/uploads/${post.image})`}} className="show__details-post--image">
+                            </div>
         
-                           </div>
+                        
             }
 
             content = 

@@ -189,6 +189,14 @@
     height: 30px;
   }
 }
+@media (max-width: 480px) 
+{
+  .show__details-post--image
+  {
+    width: 280px !important; 
+    height: 250px !important;
+  }
+}
 .item-setting
 {
   margin: 0;
