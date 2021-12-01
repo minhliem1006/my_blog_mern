@@ -76,7 +76,7 @@ const Blog = ({index,children}) => {
         } catch (error) {
             
         }
-
+        setShow(false);
     }
     //handle show date in moongo of post
     const date = new Date(children.createdAt);
